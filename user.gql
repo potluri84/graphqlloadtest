@@ -1,0 +1,8 @@
+type autoSearchResultsgdb @cacheControl(maxAge: 240) {
+     matches: String
+     classType: String
+ }
+
+ type Query {
+      autoSearchGDB(text:String): [autoSearchResultsgdb]
+  }
